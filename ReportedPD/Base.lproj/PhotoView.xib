@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="15G1421" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="PhotoView" customModule="ReportedPD" customModuleProvider="target">
+            <connections>
+                <outlet property="deleteButton" destination="uzA-RV-CRY" id="53h-zI-MqT"/>
+                <outlet property="imgView" destination="uoP-xM-LM1" id="A4l-33-VhG"/>
+                <outlet property="loadingIcon" destination="cCR-7c-ila" id="eMb-aj-a3q"/>
+                <outlet property="photoButton" destination="gpa-zL-gAR" id="Wjr-Xl-Ek9"/>
+                <outlet property="playIcon" destination="mid-4z-VPv" id="aIV-Vn-Fcp"/>
+                <outlet property="titleField" destination="QvE-id-vb5" id="08v-3j-Alq"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clipsSubviews="YES" contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="265"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="uoP-xM-LM1">
+                    <rect key="frame" x="15" y="15" width="345" height="205"/>
+                    <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                </imageView>
+                <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="player-icon" translatesAutoresizingMaskIntoConstraints="NO" id="mid-4z-VPv">
+                    <rect key="frame" x="150" y="80.5" width="75" height="75"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="mid-4z-VPv" secondAttribute="height" multiplier="1:1" id="T88-zt-26g"/>
+                    </constraints>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gpa-zL-gAR" userLabel="Photo Button">
+                    <rect key="frame" x="15" y="15" width="345" height="205"/>
+                    <fontDescription key="fontDescription" type="system" weight="medium" pointSize="14"/>
+                    <connections>
+                        <action selector="showPhoto:" destination="-1" eventType="touchUpInside" id="q3o-fA-exk"/>
+                    </connections>
+                </button>
+                <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="cCR-7c-ila">
+                    <rect key="frame" x="177" y="107.5" width="20" height="20"/>
+                </activityIndicatorView>
+                <button hidden="YES" opaque="NO" contentMode="center" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uzA-RV-CRY" userLabel="Delete">
+                    <rect key="frame" x="345" y="0.0" width="30" height="30"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="30" id="OAZ-5d-4Wb"/>
+                        <constraint firstAttribute="height" constant="30" id="vM7-EW-Fdf"/>
+                    </constraints>
+                    <state key="normal" image="remove-icon"/>
+                </button>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Caption for this media" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="QvE-id-vb5">
+                    <rect key="frame" x="15" y="225" width="345" height="35"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="35" id="bNV-Tq-jaD"/>
+                    </constraints>
+                    <nil key="textColor"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="uzA-RV-CRY" firstAttribute="trailing" secondItem="uoP-xM-LM1" secondAttribute="trailing" constant="15" id="40q-m0-aoY"/>
+                <constraint firstItem="uzA-RV-CRY" firstAttribute="top" secondItem="uoP-xM-LM1" secondAttribute="top" constant="-15" id="4HL-mc-LDq"/>
+                <constraint firstAttribute="bottom" secondItem="QvE-id-vb5" secondAttribute="bottom" constant="5" id="8kT-Fd-lW2"/>
+                <constraint firstItem="gpa-zL-gAR" firstAttribute="leading" secondItem="uoP-xM-LM1" secondAttribute="leading" id="CuS-3F-cwu"/>
+                <constraint firstItem="uoP-xM-LM1" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="15" id="MSM-IF-Wsh"/>
+                <constraint firstItem="cCR-7c-ila" firstAttribute="centerY" secondItem="uoP-xM-LM1" secondAttribute="centerY" id="STg-nG-hxO"/>
+                <constraint firstItem="mid-4z-VPv" firstAttribute="centerX" secondItem="uoP-xM-LM1" secondAttribute="centerX" id="USg-2b-26I"/>
+                <constraint firstItem="uoP-xM-LM1" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="15" id="aD6-6B-fgu"/>
+                <constraint firstAttribute="trailing" secondItem="uoP-xM-LM1" secondAttribute="trailing" constant="15" id="dPV-cb-15V"/>
+                <constraint firstItem="mid-4z-VPv" firstAttribute="centerY" secondItem="uoP-xM-LM1" secondAttribute="centerY" id="eeF-VC-Nwy"/>
+                <constraint firstItem="QvE-id-vb5" firstAttribute="trailing" secondItem="uoP-xM-LM1" secondAttribute="trailing" id="hYK-ML-Eqd"/>
+                <constraint firstItem="gpa-zL-gAR" firstAttribute="bottom" secondItem="uoP-xM-LM1" secondAttribute="bottom" id="hri-PE-35F"/>
+                <constraint firstItem="QvE-id-vb5" firstAttribute="top" secondItem="uoP-xM-LM1" secondAttribute="bottom" constant="5" id="l5t-RW-fDq"/>
+                <constraint firstItem="mid-4z-VPv" firstAttribute="width" secondItem="iN0-l3-epB" secondAttribute="width" multiplier="0.2" id="lJ2-vF-w1H"/>
+                <constraint firstItem="cCR-7c-ila" firstAttribute="centerX" secondItem="uoP-xM-LM1" secondAttribute="centerX" id="m9s-lE-ceO"/>
+                <constraint firstItem="gpa-zL-gAR" firstAttribute="trailing" secondItem="uoP-xM-LM1" secondAttribute="trailing" id="n4F-6B-OZU"/>
+                <constraint firstAttribute="bottom" secondItem="uoP-xM-LM1" secondAttribute="bottom" priority="750" id="wU0-9z-maj"/>
+                <constraint firstItem="QvE-id-vb5" firstAttribute="leading" secondItem="uoP-xM-LM1" secondAttribute="leading" id="xml-RN-VLQ"/>
+                <constraint firstItem="gpa-zL-gAR" firstAttribute="top" secondItem="uoP-xM-LM1" secondAttribute="top" id="zD9-Vm-XEi"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="13.5" y="-127.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="player-icon" width="200" height="200"/>
+        <image name="remove-icon" width="30" height="30"/>
+    </resources>
+</document>

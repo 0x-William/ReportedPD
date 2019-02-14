@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="15G1212" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="599" height="121"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" tag="1" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="6JV-Na-Ry8">
+                    <rect key="frame" x="0.0" y="0.0" width="161" height="121"/>
+                    <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="6JV-Na-Ry8" secondAttribute="height" multiplier="4:3" id="itQ-C5-0AR"/>
+                    </constraints>
+                </imageView>
+                <activityIndicatorView opaque="NO" tag="2" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="per-Sj-Ghp">
+                    <rect key="frame" x="71" y="51" width="20" height="20"/>
+                </activityIndicatorView>
+                <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nmb-VX-DpO">
+                    <rect key="frame" x="0.0" y="0.0" width="161" height="121"/>
+                </button>
+                <imageView userInteractionEnabled="NO" tag="4" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="player-icon" translatesAutoresizingMaskIntoConstraints="NO" id="AkZ-vl-obf">
+                    <rect key="frame" x="56" y="36" width="49" height="49"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="AkZ-vl-obf" secondAttribute="height" multiplier="1:1" id="Yal-is-B8X"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" tag="10" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="24 W 35th Street, NY, NY" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UpC-WL-iSu">
+                    <rect key="frame" x="171" y="10" width="418" height="16"/>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="13"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" tag="11" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="today" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ELU-35-nl4">
+                    <rect key="frame" x="171" y="31" width="33" height="15"/>
+                    <fontDescription key="fontDescription" type="system" weight="medium" pointSize="12"/>
+                    <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" tag="12" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Reported by: Witness" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8hp-ka-fQx">
+                    <rect key="frame" x="464" y="31" width="125" height="15"/>
+                    <fontDescription key="fontDescription" type="system" weight="medium" pointSize="12"/>
+                    <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" tag="20" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1 of 12" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UCe-Xw-wb8">
+                    <rect key="frame" x="171" y="98" width="418" height="15"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="8hp-ka-fQx" firstAttribute="centerY" secondItem="ELU-35-nl4" secondAttribute="centerY" id="0Uz-a1-W4u"/>
+                <constraint firstItem="UpC-WL-iSu" firstAttribute="top" secondItem="6JV-Na-Ry8" secondAttribute="top" constant="10" id="1BC-Bk-FRt"/>
+                <constraint firstItem="UpC-WL-iSu" firstAttribute="leading" secondItem="6JV-Na-Ry8" secondAttribute="trailing" constant="10" id="5nd-Er-VJF"/>
+                <constraint firstItem="per-Sj-Ghp" firstAttribute="centerX" secondItem="6JV-Na-Ry8" secondAttribute="centerX" id="A7Z-6S-jtk"/>
+                <constraint firstItem="6JV-Na-Ry8" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="EvU-hJ-6UJ"/>
+                <constraint firstAttribute="trailing" secondItem="8hp-ka-fQx" secondAttribute="trailing" constant="10" id="Hm0-9e-5pr"/>
+                <constraint firstItem="nmb-VX-DpO" firstAttribute="bottom" secondItem="6JV-Na-Ry8" secondAttribute="bottom" id="JEK-zP-WH6"/>
+                <constraint firstItem="UCe-Xw-wb8" firstAttribute="leading" secondItem="nmb-VX-DpO" secondAttribute="trailing" constant="10" id="QNh-Pn-cWC"/>
+                <constraint firstAttribute="trailing" secondItem="UpC-WL-iSu" secondAttribute="trailing" constant="10" id="Uoc-lO-Dbc"/>
+                <constraint firstItem="ELU-35-nl4" firstAttribute="top" secondItem="UpC-WL-iSu" secondAttribute="bottom" constant="5" id="VQM-5v-2gT"/>
+                <constraint firstItem="per-Sj-Ghp" firstAttribute="centerY" secondItem="6JV-Na-Ry8" secondAttribute="centerY" id="WDr-VC-YIZ"/>
+                <constraint firstItem="AkZ-vl-obf" firstAttribute="centerX" secondItem="6JV-Na-Ry8" secondAttribute="centerX" id="WpK-tu-ezZ"/>
+                <constraint firstItem="ELU-35-nl4" firstAttribute="leading" secondItem="nmb-VX-DpO" secondAttribute="trailing" constant="10" id="aSH-fX-CTf"/>
+                <constraint firstAttribute="bottom" secondItem="6JV-Na-Ry8" secondAttribute="bottom" id="do1-N3-fhR"/>
+                <constraint firstAttribute="trailing" secondItem="UCe-Xw-wb8" secondAttribute="trailing" constant="10" id="fAJ-4V-BYY"/>
+                <constraint firstItem="nmb-VX-DpO" firstAttribute="trailing" secondItem="6JV-Na-Ry8" secondAttribute="trailing" id="hee-Bl-5pE"/>
+                <constraint firstItem="AkZ-vl-obf" firstAttribute="centerY" secondItem="6JV-Na-Ry8" secondAttribute="centerY" id="j5k-90-Uet"/>
+                <constraint firstItem="nmb-VX-DpO" firstAttribute="leading" secondItem="6JV-Na-Ry8" secondAttribute="leading" id="qzs-9P-5bh"/>
+                <constraint firstItem="6JV-Na-Ry8" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="urC-aP-aEn"/>
+                <constraint firstItem="UCe-Xw-wb8" firstAttribute="bottom" secondItem="6JV-Na-Ry8" secondAttribute="bottom" constant="-8" id="vKF-fN-up4"/>
+                <constraint firstItem="nmb-VX-DpO" firstAttribute="top" secondItem="6JV-Na-Ry8" secondAttribute="top" id="ybq-Zl-4J1"/>
+                <constraint firstItem="AkZ-vl-obf" firstAttribute="height" secondItem="6JV-Na-Ry8" secondAttribute="height" multiplier="0.4" id="yvF-lr-HK1"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="323.5" y="-415.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="player-icon" width="200" height="200"/>
+    </resources>
+</document>

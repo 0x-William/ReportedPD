@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>AD_UNIT_ID_FOR_BANNER_TEST</key>
+	<string>ca-app-pub-3940256099942544/2934735716</string>
+	<key>AD_UNIT_ID_FOR_INTERSTITIAL_TEST</key>
+	<string>ca-app-pub-3940256099942544/4411468910</string>
+	<key>CLIENT_ID</key>
+	<string>1024610818641-tfpdp1j0iraq05fgj113iqnirtpnp3up.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.1024610818641-tfpdp1j0iraq05fgj113iqnirtpnp3up</string>
+	<key>ANDROID_CLIENT_ID</key>
+	<string>1024610818641-r8fi8v7m5e7mdlkf0u6qe1o5r6b6s9nf.apps.googleusercontent.com</string>
+	<key>API_KEY</key>
+	<string>AIzaSyCEv90x_J8i2ukoHagmZXpQGYhMhMp4rdU</string>
+	<key>GCM_SENDER_ID</key>
+	<string>1024610818641</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.reported.reportedpd</string>
+	<key>PROJECT_ID</key>
+	<string>reported-72b2b</string>
+	<key>STORAGE_BUCKET</key>
+	<string>reported-72b2b.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<true></true>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:1024610818641:ios:bee78d03085ea986</string>
+	<key>DATABASE_URL</key>
+	<string>https://reported-72b2b.firebaseio.com</string>
+</dict>
+</plist>
